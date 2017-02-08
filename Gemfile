@@ -32,12 +32,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#adds unicorn as server rather than webrick
 gem 'unicorn'
+#adds heroku error logging
+gem 'rails_12factor', group: :production
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
