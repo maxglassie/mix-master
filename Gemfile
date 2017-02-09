@@ -27,7 +27,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
+# Use ActiveModel has_secure_passwordw
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
@@ -46,6 +46,8 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
